@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "392d9987-3ce1-4655-9882-74b5dd9f96e9": {
+      "ProjectGuid": "392d9987-3ce1-4655-9882-74b5dd9f96e9",
+      "DisplayName": "CSI-WeatherApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

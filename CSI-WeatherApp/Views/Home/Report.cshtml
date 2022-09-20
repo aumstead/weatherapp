@@ -1,0 +1,30 @@
+﻿@model ReportViewModel
+@{
+    ViewData["Title"] = "7-Day Forecast";
+}
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<h2>Lat: @Model.Lat</h2>
+<h2>Long: @Model.Long</h2>
+
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Temperature</td>
+            <td>Detailed Forecast</td>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var forecast in Model.WeatherForecast)
+{
+
+            <tr>
+                <td>@forecast.Name</td>
+                <td>@forecast.Temperature</td>
+                <td>@forecast.DetailedForecast</td>
+            </tr>
+}
+    </tbody>
+</table>

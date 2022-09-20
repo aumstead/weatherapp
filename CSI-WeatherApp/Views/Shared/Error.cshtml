@@ -1,0 +1,17 @@
+﻿@model ErrorViewModel
+@{
+    
+}
+
+<h1 class="text-danger">Error</h1>
+
+
+
+@if (!string.IsNullOrWhiteSpace(Model.Message))
+{
+    <h3>@Model.Message</h3>
+}
+else
+{
+    <h3>Oops, there was an error somewhere</h3>
+}
